@@ -1,2 +1,2 @@
 # PranavKumarAV.github.io
- Task1/NormalMode/Delta
+ Delta/task1/normal/final
