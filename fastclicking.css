@@ -7,8 +7,9 @@ h1{
 	font-size:-webkit-xxx-large;
 }
 .container{
-	max-width: 260px;
+	max-width: 350px;
 	margin: 3% auto 0 auto;
+	transform: translate(0px,30px);
 }
 .numbers{
 	width: 20px;

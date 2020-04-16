@@ -16,10 +16,15 @@ for(i=0;i<nos.length;i++){
 			prevar+=1;
 			if(check==1){
 			stop=setInterval(runtime,100);
-		    }else if(check==36){
+		    }else if(check==40){
 			    clearInterval(stop);
 			    this.textContent="";
 			    show.textContent="Your Score is "+time.textContent+" sec";
+			    for(var j=0;j<40;j++){
+                	nos[j].style.width=0;
+                	nos[j].style.padding=0;
+                	nos[j].style.margin=0;
+                }
 			    total.classList.add("hide");
 			    temp=time.textContent;
                 dobestscores(temp);
@@ -28,6 +33,11 @@ for(i=0;i<nos.length;i++){
 		}else{
 			eraseall();
 			show.textContent="GAME OVER!!!";
+			for(var j=0;j<40;j++){
+                	nos[j].style.width=0;
+                	nos[j].style.padding=0;
+                	nos[j].style.margin=0;
+                }
 			total.classList.add("hide");
 		}
 		this.textContent="";
@@ -37,10 +47,15 @@ function runtime(){
 	time.textContent=((Number(time.textContent)*10)+1)/10;
 }
 function allocatenos(){
+	for(var j=0;j<40;j++){
+    	nos[j].style.width="20px";
+	    nos[j].style.padding="10px 10px";
+	    nos[j].style.margin="1px";
+    }
 	for(var i=0;i<nos.length;i++){
 	while(nos[i].textContent==""){
 		var k=0;
-		var randint=getRandomInt(36);
+		var randint=getRandomInt(40);
 		for(var j=0;j<i;j++){
 			if(nos[j].textContent==randint){
 				k++;
@@ -49,6 +64,10 @@ function allocatenos(){
 		}
 		if(k==0){
 			nos[i].textContent=randint;
+			nos[i].style.background="grey";
+			nos[i].style.width="20px";
+	        nos[i].style.padding="10px 10px";
+	        nos[i].style.margin="1px";
 		}
 	}
 }
