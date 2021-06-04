@@ -1,8 +1,8 @@
 # PranavKumarAV.github.io
- Delta/task1/normal/final
+
+Task 1 : Forty shades of gray (Normal-Mode)
 
 Code which I did for my college club Induction:
-Task 1: NORMAL MODE:
 
 Problem Statement:
 
